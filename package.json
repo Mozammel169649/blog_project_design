@@ -1,0 +1,13 @@
+{
+  "name": "blog_project_design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "npx sass assets/scss/_app.scss assets/style/app.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

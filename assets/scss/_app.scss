@@ -1,0 +1,13 @@
+@import "./vendors/_variables";
+@import "./vendors/_reset";
+
+@import "./components/button";
+@import "./components/commonheading";
+
+@import "./layouths/footer";
+@import "./layouths/header";
+@import "./layouths/navber";
+
+@import "./views/about";
+@import "./views/home";
+@import "./views/contact.scss";
