@@ -1,9 +1,12 @@
-@import "./vendors/_variables";
-@import "./vendors/_reset";
+@import "./vendors/fonts";
+@import "./vendors/variables";
+@import "./mixins/media";
+@import "./vendors/reset";
 
 @import "./components/button";
 @import "./components/commonheading";
 
+@import "./layouths/container";
 @import "./layouths/footer";
 @import "./layouths/header";
 @import "./layouths/navber";

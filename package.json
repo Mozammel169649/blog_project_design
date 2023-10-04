@@ -5,9 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "npx sass assets/scss/_app.scss assets/style/app.css -w"
+    "scss": "npx sass assets/scss/app.scss assets/style/app.css -w",
+    "postcss": "npx postcss assets/style/app.css -o assets/style/app.css"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-scss": "^4.0.9",
+    "sass": "^1.68.0",
+    "scss": "^0.2.4"
+  }
 }

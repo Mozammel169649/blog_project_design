@@ -4,7 +4,7 @@ html {
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    // font-family: var(--app_font);
+    font-family: var(--app_font);
     
 }
 
@@ -19,7 +19,7 @@ span {
 a {
     text-decoration: none;
     font-size: 12px;
-    // transition-duration: .3s;
+    transition-duration: .3s;
 }
 
 img {
@@ -46,6 +46,9 @@ h6 {
     font-size: 22px;
     line-height: 32px;
 
+}
+button{
+    border: none;
 }
 
 p {
@@ -86,10 +89,10 @@ h3 {
     line-height: 32px;
 }
 
-// .material-symbols-outlined {
-//     font-variation-settings:
-//         'FILL'0,
-//         'wght'400,
-//         'GRAD'0,
-//         'opsz'48
-// }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}

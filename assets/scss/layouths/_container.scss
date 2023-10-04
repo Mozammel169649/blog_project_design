@@ -1,0 +1,63 @@
+.container {
+    width: 1200px;
+    border: var(--border);
+    margin: auto;
+    @include xs() {
+        width: calc(100% - 30px);
+    }
+
+    @include sm() {
+        width: calc(576px - 30px);
+    }
+
+    @include md() {
+        width: calc(768px - 30px);
+
+    }
+
+    @include lg() {
+        width: calc(992px - 30px);
+    }
+
+    @include xl() {
+        width: calc(1200px - 30px);
+
+    }
+
+    @include xxl() {
+        width: calc(1400px - 30px);
+
+    }
+}
+
+.container-fluid {
+    background-color: var(--black_deep);
+    max-width: 1440px;
+    margin: auto;
+    @include xs() {
+        width: calc(100%);
+    }
+
+    @include sm() {
+        width: calc(100%);
+    }
+
+    @include md() {
+        width: calc(100%);
+
+    }
+
+    @include lg() {
+        width: calc(100%);
+    }
+
+    @include xl() {
+        width: calc(100%);
+
+    }
+
+    @include xxl() {
+        width: calc(100%);
+
+    }
+}

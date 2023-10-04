@@ -1,18 +1,38 @@
+@font-face {
+  font-family: "sen-regular";
+  src: url("../fonts/Sen/static/Sen-Regular.ttf");
+}
+@font-face {
+  font-family: "sen-bold";
+  src: url("../fonts/Sen/static/Sen-Bold.ttf");
+}
+@font-face {
+  font-family: "sen-semibold";
+  src: url("../fonts/Sen/static/Sen-SemiBold.ttf");
+}
+@font-face {
+  font-family: "sen-extrabold";
+  src: url("../fonts/Sen/static/Sen-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("../fonts/Sen/static/Inter-Medium.ttf");
+}
 :root {
   --border: 1px solid red;
-  --brand_light: #0F6E8C;
-  --brand_deep: #05546D;
-  --black_light:#4F4F4F;
-  --black_deep: #2D2F30;
+  --brand_deep: #FFD050;
+  --brand_light: #FBF6EA;
+  --black_light:#4C4C4C;
+  --black_deep: #232536;
   --gray: #8B8C8C;
   --white: #fff;
   --testimonial_bg: #F4FBFF;
-  --app_font: "poppins-regular";
-  --poppin_regular: "poppins-regular";
-  --poppin_semibold: "poppins-semibold";
-  --poppin_bold: "poppins-bold";
-  --poppin_extrabold: "poppins-extabold";
-  --play_fair: "Playfair Display", serif;
+  --app_font: "sen-regular";
+  --sen_regular: "sen-regular";
+  --sen_semibold: "sen-semibold";
+  --sen_bold: "sen-bold";
+  --sen_extrabold: "sen-extabold";
+  --Inter_Medium: "Inter-Medium";
 }
 
 body,
@@ -21,6 +41,7 @@ html {
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+  font-family: var(--app_font);
 }
 
 img,
@@ -34,6 +55,7 @@ span {
 a {
   text-decoration: none;
   font-size: 12px;
+  transition-duration: 0.3s;
 }
 
 img {
@@ -59,6 +81,10 @@ h6 {
   list-style: none;
   font-size: 22px;
   line-height: 32px;
+}
+
+button {
+  border: none;
 }
 
 p {
@@ -94,6 +120,124 @@ h2 {
 h3 {
   font-size: 22px;
   line-height: 32px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.container {
+  width: 1200px;
+  border: var(--border);
+  margin: auto;
+}
+@media (min-width: 0px) and (max-width: 575.9px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .container {
+    width: 546px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.9px) {
+  .container {
+    width: 738px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.9px) {
+  .container {
+    width: 962px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.9px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
+
+.container-fluid {
+  background-color: var(--black_deep);
+  max-width: 1440px;
+  margin: auto;
+}
+@media (min-width: 0px) and (max-width: 575.9px) {
+  .container-fluid {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .container-fluid {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.9px) {
+  .container-fluid {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.9px) {
+  .container-fluid {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.9px) {
+  .container-fluid {
+    width: 100%;
+  }
+}
+@media (min-width: 1400px) {
+  .container-fluid {
+    width: 100%;
+  }
+}
+
+header .header_body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header .header_body .logo img {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 140px;
+}
+header .header_body .nav_button {
+  display: flex;
+  gap: 30px;
+}
+header .header_body .nav_button .nav ul {
+  margin-top: 26px;
+  margin-bottom: 26px;
+  display: flex;
+  gap: 24px;
+}
+header .header_body .nav_button .nav ul li a {
+  color: var(--white);
+  font-size: 16px;
+  font-style: var(--Inter_Medium);
+  line-height: 27px;
+}
+header .header_body .nav_button .nav ul li a:hover {
+  color: var(--brand_deep);
+}
+header .header_body .nav_button .Subscribe button {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  padding: 16px 48px;
+  background: var(--white);
+  color: var(--black_deep);
+  font-family: var(--sen_semibold);
+}
+header .header_body .nav_button .Subscribe button.active, header .header_body .nav_button .Subscribe button:hover {
+  background: var(--brand_deep);
 }
 
 /*# sourceMappingURL=app.css.map */
