@@ -1,0 +1,45 @@
+#join {
+    margin-top: 60px;
+    .join {
+        width: 380px;
+        padding: 10px;
+        margin: auto;
+        @include custom_media(320px, 575.9px) {
+            width: 300px;
+        }
+        .join_title {
+            padding-top: 25px;
+            font-size: 28px;
+            line-height: 38px;
+            text-align: center;
+        }
+
+        .join_discription {
+            padding-top: 15px;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        .button {
+            padding-top: 20px;
+            padding-bottom: 30px;
+            text-align: center;
+
+            a {
+                display: inline-flex;
+                padding: 16px 48px;
+                font-size: 18px;
+                align-items: flex-start;
+                gap: 12px;
+                color: var(--white);
+                background-color: var(--brand_deep);
+
+                @include custom_media(320px, 575.9px) {
+                    padding: 12px 29px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
