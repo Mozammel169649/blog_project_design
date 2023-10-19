@@ -6,40 +6,336 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/fonts/google_icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/style/app.css">
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid">
+    <header id="nav_bar">
+        <div class="container-fluid header-color">
             <div class="container">
                 <div class="header_body">
                     <div class="logo">
                         <img src="./assets/images/Logo.png" alt="">
                     </div>
                     <div class="nav_button">
-                        <nav class="nav">
-                            <ul id="nav_list">
-                                <li><a href="#" class="active">Home</a></li>
-                                <li><a href="#" class="active">Blog</a></li>
-                                <li><a href="#" class="active">About us</a></li>
-                                <li><a href="#" class="active">Contact us</a></li>
+                        <nav id="nav_list" class="nav">
+                            <ul>
+                                <li class="close_nav">
+                                    <a onclick="event.preventDefault(); nav_list.classList.remove('active')">
+                                        <span class="material-symbols-outlined fill">
+                                            close
+                                        </span>
+                                    </a>
+                                </li>
+                                <li><a href="javascript:void();" class="active">Home</a></li>
+                                <li><a href="javascript:void();" class="active">Blog</a></li>
+                                <li><a href="javascript:void();" class="active">About us</a></li>
+                                <li><a href="javascript:void()" class="active">Contact us</a></li>
                             </ul>
                         </nav>
-
                         <div class="Subscribe">
-                            <button>Subscribe</button>
+                            <button id="nav_button">Subscribe</button>
+                        </div>
+                        <div class="nav_controll">
+                            <a href="javascript:void();"
+                                onclick="event.preventDefault(); nav_list.classList.toggle('active')">
+                                <span class="material-symbols-outlined fill wght">
+                                    format_align_right
+                                </span>
+                            </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
 
+    </header>
+
+    <section id="banner">
+        <div class="container">
+            <div class="bg">
+                <div class="overlay">
+                    <div class="banner-detailse">
+                        <h4 class="h4">Posted on startup</h4>
+                        <h1>Step-by-step guide to choosing great font pairs</h1>
+                        <p class="from">By <span>James West </span> | May 23, 2022 </p>
+                        <p class="banner_paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        <div class="button">
+                            <a href=""> Read More > </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="featured">
+        <div class="container">
+            <div class="featured-body">
+                <div class="featured_left">
+                    <h2 class="section-title">Featured post</h2>
+                    <div class="fet-card">
+                        <img src="assets/images/post.png" alt="">
+                        <p class="from">By <span> John Doe </span> | May 23, 2022</p>
+                        <h3 class="left_title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                        <p class="left_discreption">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                            aperiam harum hic accusamus
+                            officiis sunt a consectetur eveniet, minus est!</p>
+                        <div class="button">
+                            <a href=""> Read More > </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured_right">
+                    <div class="right_header">
+                        <h3 class="header">All post</h3>
+                        <a href="">view all</a>
+                    </div>
+                    <div class="post_list">
+                        <p class="from">By <span> John Doe </span> | May 23, 2022</p>
+                        <h3 class="right_title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                    </div>
+                    <div class="post_list">
+                        <p class="from">By <span> John Doe </span> | May 23, 2022</p>
+                        <h3 class="right_title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                    </div>
+                    <div class="post_list">
+                        <p class="from">By <span> John Doe </span> | May 23, 2022</p>
+                        <h3 class="right_title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                    </div>
+                    <div class="post_list">
+                        <p class="from">By <span> John Doe </span> | May 23, 2022</p>
+                        <h3 class="right_title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about">
+                <div class="about_us">
+                    <h4 class="about_heading">About US</h4>
+                    <h3 class="about_title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aut est
+                        error.</h3>
+                    <p class="about_paregrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi excepturi
+                        sapiente numquam,
+                        dolores, cumque saepe dignissimos eius placeat voluptates molestias eum, laboriosam deleniti
+                        iure obcaecati.</p>
+                    <a class="about_ancore" href="">Read more > </a>
+                </div>
+                <div class="our_mission">
+                    <h4 class="mission_heading">Our mission</h4>
+                    <h3 class="mission_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <p class="mission_paregrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi excepturi
+                        sapiente numquam,
+                        dolores, cumque saepe dignissimos eius placeat voluptates molestias eum, laboriosam deleniti
+                        iure obcaecati.cumque saepe dignissimos eius placeat voluptates molestias eum, laboriosam
+                        deleniti
+                        iure obcaecati.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catagory">
+        <div class="container">
+            <h3 class="catagory_header">Choose A Catagory</h3>
+            <div class="catagory_list">
+                <div class="catagory_card">
+                    <img src="assets/images/Icon.svg" alt="">
+                    <h3 class="catagory_title">Business</h3>
+                    <p class="catagory_discription">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="catagory_card">
+                    <img class="img" src="assets/images/shuttle.svg" alt="">
+                    <h3 class="catagory_title">Startup</h3>
+                    <p class="catagory_discription">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="catagory_card">
+                    <img class="img" src="assets/images/economy (1).svg" alt="">
+                    <h3 class="catagory_title">Economy</h3>
+                    <p class="catagory_discription">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="catagory_card">
+                    <img class="img" src="assets/images/cyborg.svg" alt="">
+                    <h3 class="catagory_title">Technology</h3>
+                    <p class="catagory_discription">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="catagory_footer">
+                <img class="status_img" src="./assets/images/kk21.png" alt="">
+
+                <div class="status_card">
+                    <p class="from">Why we started</p>
+                    <h3 class="left_title">It started out as a simple idea and evolved into our passion</h3>
+                    <p class="left_discreption">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                        aperiam harum hic accusamus
+                        officiis sunt a consectetur eveniet, minus est!</p>
+                    <div class="button">
+                        <a href=""> Read More > </a>
+                    </div>
                 </div>
 
             </div>
 
         </div>
+    </section>
 
-    </header>
-    
+    <section id="author_list">
+        <div class="container">
+            <h3 class="author_header">Author List</h3>
+            <div class="author_list">
+                <div class="author_card">
+                    <img class="author_img" src="assets/images/2.svg" alt="">
+                    <h3 class="author_name">Maryam</h3>
+                    <p class="author_email">maryam@gmail.com</p>
+                    <div class="social_icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="author_card">
+                    <img class="author_img" src="assets/images/3.svg" alt="">
+                    <h3 class="author_name">Shaki</h3>
+                    <p class="author_email">shakil@gmail.com</p>
+                    <div class="social_icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="author_card">
+                    <img class="author_img" src="assets/images/4.svg" alt="">
+                    <h3 class="author_name">Tamanna</h3>
+                    <p class="author_email">tamanna@gmail.com</p>
+                    <div class="social_icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="author_card">
+                    <img class="author_img" src="assets/images/1.svg" alt="">
+                    <h3 class="author_name">Tamima</h3>
+                    <p class="author_email">tamima@gmail.com</p>
+                    <div class="social_icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="logo_list">
+                <img class="logo_image" src="assets/images/Logo 1.svg" alt="">
+                <img src="assets/images/Logo 2.svg" alt="">
+                <img src="assets/images/Logo 3.svg" alt="">
+                <img src="assets/images/Logo 4.svg" alt="">
+                <img src="assets/images/Logo 5.svg" alt="">
+                <img src="assets/images/Logo 3.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <div class="testimonials">
+                <div class="left">
+                    <h4 class="testimonials_heading">TESTIMONIALs</h4>
+                    <h3 class="testimonials_title">What people say about our blog</h3>
+                    <p class="testimonials_paregrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor.</p>
+                </div>
+                <div class="right">
+                    <h3 class="right_testimonials_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+
+                    <div class="right_bottom">
+                        <div class="user">
+                            <img class="user_img" src="assets/images/Profile picture.svg" alt="">
+                            <div class="status">
+                                <h4 class="user_name">MD Mozammel</h4>
+                                <p class="from">New york,US</p>
+                            </div>
+                        </div>
+                        <div class="arrow">
+                            <i class="fa-solid fa-arrow-right right_arrow"></i>
+                            <i class="fa-solid fa-arrow-left left_arrrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join">
+        <div class="container">
+            <div class="join">
+                <h4 class="join_title">Join our team to be a part of our story</h4>
+                <p class="join_discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt.</p>
+                <div class="button">
+                    <a href=""> Read More > </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="top">
+                    <div class="logo">
+                        <img src="./assets/images/Logo.png" alt="">
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="javascript:void();" class="active">Home</a></li>
+                            <li><a href="javascript:void();" class="active">Blog</a></li>
+                            <li><a href="javascript:void();" class="active">About us</a></li>
+                            <li><a href="javascript:void()" class="active">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="left">
+                        <h4 class="left_title">Subscribe to our news letter to get latest updates and news</h4>
+                    </div>
+                    <div class="right">
+                        <input class="input" type="text" name="" placeholder="Enter your Email" id="">
+                        <div class="button">
+                            <a href=""> Subscribe </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="discription">
+                        <p class="p1">Finstreet 118 2561 Fintown</p>
+                        <p class="p2">Hello@finsweet.com 020 7993 2905</p>
+                    </div>
+                    <div class="social_icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
