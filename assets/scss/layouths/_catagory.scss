@@ -1,0 +1,214 @@
+#catagory {
+    margin-top: 60px;
+
+    .catagory_header {
+        font-size: 25px;
+        font-family: var(--app_font);
+        line-height: 35px;
+        color: var(--black_deep);
+        text-align: center;
+    }
+
+    .catagory_list {
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+
+        @include custom_media(576px, 991.9px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include custom_media(320px, 576px) {
+            display: grid;
+            grid-template-columns: repeat(1fr);
+        }
+
+        .catagory_card {
+            border: 1px solid gray;
+            padding: 15px;
+
+            &:hover {
+                background-color: var(--brand_deep);
+
+            }
+
+            &:hover .img {
+                background-color: white;
+
+            }
+
+            .img {
+                display: inline-block;
+                padding: 16px 14px;
+            }
+
+
+            .catagory_title {
+                font-size: 25px;
+                line-height: 38px;
+                font-family: var(--app_font);
+                color: var(--app_font);
+            }
+
+            .catagory_discription {
+                padding-top: 10px;
+                font-family: var(--app_font);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .catagory_footer {
+        margin-top: 40px;
+        position: relative;
+        @include custom_media(320px, 576px) {
+          position: static;
+         }
+       
+        .status_img {
+            width: 75%;
+            @include custom_media(320px, 576px) {
+               width: 100%;
+            }
+        }
+
+        .status_card {
+            background-color: var(--white);
+            padding: 40px;
+            position: absolute;
+            bottom: 0px;
+            left: 45%;
+
+            @include custom_media(576px, 991.9px) {
+                background-color: var(--white);
+                padding: 18px;
+                position: absolute;
+                bottom: 0px;
+                left: 38%;
+            }
+            @include custom_media(320px, 575.9px) {
+                background-color: var(--white);
+                padding: 18px;
+                position: static;
+            }
+
+            .from {
+                font-family: var(--app_font);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 26px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+
+                @include custom_media(576px, 991.9px) {
+                    font-family: var(--app_font);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 21px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+                @include custom_media(320px, 575.9px) {
+                    font-family: var(--app_font);
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 21px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .left_title {
+                padding-top: 12px;
+                color: var(--black_deep);
+                font-family: var(--app_font);
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 46px;
+                letter-spacing: -2px;
+
+                @include custom_media(576px, 991.9px) {
+                    padding-top: 2px;
+                    color: var(--black_deep);
+                    font-family: var(--app_font);
+                    font-size: 19px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 30px;
+                    letter-spacing: -1px;
+                }
+                @include custom_media(320px, 575.9px) {
+                    padding-top: 2px;
+                    color: var(--black_deep);
+                    font-family: var(--app_font);
+                    font-size: 23px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 30px;
+                    letter-spacing: -1px;
+                }
+            }
+
+            .left_discreption {
+                padding-top: 12px;
+                font-family: var(--app_font);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px;
+
+                @include custom_media(576px, 991.9px) {
+                    padding-top: 12px;
+                    font-family: var(--app_font);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+                @include custom_media(320px, 575.9px){
+                    padding-top: 12px;
+                    font-family: var(--app_font);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+
+            .button {
+                padding-top: 20px;
+
+                @include custom_media(576px, 991.9px) {}
+
+                padding-top:11px;
+
+                a {
+                    display: inline-flex;
+                    padding: 14px 28px;
+                    font-size: 14px;
+                    align-items: flex-start;
+                    gap: 12px;
+                    color: var(--white);
+                    background-color: var(--brand_deep);
+
+                    @include custom_media(320px, 575.9px) {
+                        padding: 12px 29px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+    }
+}
