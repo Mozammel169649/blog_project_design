@@ -1,0 +1,190 @@
+#footer {
+    margin-top: 60px;
+    background: var(--black_deep);
+
+    .footer {
+        .top {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @include custom_media(320px, 575.9px) {
+                display: block;
+            }
+            .logo {
+                display: flex;
+                align-items: center;
+                @include custom_media(320px, 575.9px) {
+                  justify-content: center;
+                }
+                img {
+                    margin: 25px 0;
+                    width: 140px;
+                    @include custom_media(320px, 575.9px) {
+                        margin: 10px 0;
+                      }
+    
+                }
+            }
+
+            .nav {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+
+                ul {
+                    display: flex;
+                    gap: 24px;
+                    align-items: center;
+                    @include custom_media(320px, 575.9px) {
+                        gap: 7px;
+                        padding-bottom: 5px;
+                    }
+                    li {
+                        &:hover {
+                            background: var(--brand_deep);
+                            color: var(--white);
+                        }
+
+                        a {
+                            span {
+                                margin-right: 20px;
+                                font-size: 30px;
+                            }
+                        }
+                    }
+
+                    a {
+                        padding-left: 12px;
+                        color: var(--white);
+                        font-size: 16px;
+                        font-style: var(--Inter_Medium);
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+
+        .middle {
+            background: var(--black_light);
+            display: flex;
+            justify-content: space-between;
+            @include custom_media(320px, 575.9px) {
+                display: block;
+            }
+            .left {
+                width: 50%;
+                padding: 40px 50px;
+                @include custom_media(320px, 575.9px) {
+                    width: 100%;
+                    padding: 18px 28px;
+                  }
+               
+
+                .left_title {
+                    color: var(--white);
+                    font-family: var(--app_font);
+                    font-size: 23px;
+                    line-height: 32px;
+                    @include custom_media(576px, 775.9px) {
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+                    
+                }
+            }
+
+            .right {
+                width: 50%;
+                background: var(--black_light);
+                display: flex;
+                gap: 15px;
+                justify-content: center;
+                margin: auto;
+                @include custom_media(320px, 575.9px) {
+                    width: 100%;
+                    padding-bottom: 5px;
+                  }
+
+
+                .input {
+                    height: 35px;
+                    width: 215px;
+                    background-color: transparent;
+                    border: 1px solid gray;
+
+                    @include custom_media(576px, 775.9px) {
+                        height: 34px;
+                        width: 152px;
+                    }
+                    @include custom_media(320px, 575.9px) {
+                        width: 152px;
+                      }
+                }
+
+                .button {
+                    a {
+                        display: flex;
+                        padding: 10px 18px;
+                        font-size: 16px;
+                        align-items: center;
+                        color: var(--black_deep);
+                        background-color: var(--brand_deep);
+                        @include custom_media(576px, 775.9px) {
+                            padding: 10px 10px;
+                        }
+                        @include custom_media(320px, 575.9px) {
+                            padding: 12px 29px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+
+            @include custom_media(320px, 575.9px) {
+                display: block;
+            }
+            .discription {
+                padding: 20px 0px;
+                @include custom_media(320px, 575.9px) {
+                   text-align: center;
+                }
+                .p1 {
+                    color: var(--gray);
+                    font-family: var(--app_font);
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                .p2 {
+                    color: var(--gray);
+                    font-family: var(--app_font);
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+
+            .social_icon {
+                display: flex;
+                align-items: center;
+                display: flex;
+                gap: 15px;
+                @include custom_media(320px, 575.9px) {
+                    justify-content: center;
+                    padding-bottom: 10px;
+                 }
+
+                i {
+                    color: var(--gray);
+                }
+            }
+        }
+    }
+
+
+}
