@@ -1,13 +1,12 @@
 .container {
     width: 1200px;
-    border: var(--border);
     margin: auto;
     @include xs() {
-        width: calc(100% - 30px);
+        width: 100%;
     }
 
     @include sm() {
-        width: calc(576px - 30px);
+        width: 100%;
     }
 
     @include md() {
@@ -31,7 +30,6 @@
 }
 
 .container-fluid {
-    background-color: var(--black_deep);
     max-width: 1440px;
     margin: auto;
     @include xs() {
